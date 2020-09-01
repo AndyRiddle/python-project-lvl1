@@ -1,4 +1,5 @@
 *.egg-info
 /dist
 /.venv
+/.vscode
 __pycache__
