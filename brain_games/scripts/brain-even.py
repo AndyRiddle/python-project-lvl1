@@ -1,5 +1,6 @@
-import prompt
 import random
+
+import prompt
 
 
 def welcome_user():
