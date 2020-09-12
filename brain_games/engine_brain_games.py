@@ -7,7 +7,7 @@ def engine(rules, gen_question):
     name = prompt.string('\nMay I have your name? ')
     print('Hello, {0}!\n'.format(name))
 
-    for number in range(3):
+    for _ in range(3):  # noqa: WPS122
         question, correct_answer = gen_question()
         print('Question: {0}'.format(question))
         answer = prompt.string('Your answer: ')
