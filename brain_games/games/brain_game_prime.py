@@ -12,7 +12,7 @@ def number_prime(number):
     for divisor in range(LOWER_LIMIT_FIRST, math.ceil(math.sqrt(number))):
         if number % divisor == 0:
             return 'no'
-        return 'yes'
+    return 'yes'
 
 
 def gen_question_prime():
