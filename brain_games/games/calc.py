@@ -9,7 +9,7 @@ arithmetic_operations = {'+': operator.add, '-': operator.sub, '*': operator.mul
 rules_calc = 'What is the result of the expression?'
 
 
-def gen_question_calc():
+def gen_question_answer_calc():
     number1 = random.randint(LOWER_LIMIT, UPPER_LIMIT)
     number2 = random.randint(LOWER_LIMIT, UPPER_LIMIT)
     key = random.choice(list(arithmetic_operations.keys()))

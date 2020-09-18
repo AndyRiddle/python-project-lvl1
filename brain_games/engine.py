@@ -1,13 +1,16 @@
 import prompt
 
+ROUNDS = 3
 
-def engine(rules, gen_question):
+
+def start_game(rules, gen_question):
     print('\nWelcome to the Brain Games!')
     print(rules)
     name = prompt.string('\nMay I have your name? ')
     print('Hello, {0}!\n'.format(name))
-
-    for _ in range(3):  # noqa: WPS122
+    # Found all unused variables definition
+    # Linter bug
+    for _ in range(ROUNDS):  # noqa: WPS122
         question, correct_answer = gen_question()
         print('Question: {0}'.format(question))
         answer = prompt.string('Your answer: ')

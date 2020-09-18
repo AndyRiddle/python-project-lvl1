@@ -6,13 +6,16 @@ UPPER_LIMIT = 100
 rules_even = 'Answer "yes" if number even otherwise answer "no".'
 
 
-def number_even(number):
+def define_number_even(number):
     if int(number) % 2 == 0:
-        return 'yes'
-    return 'no'
+        return True
+    return False
 
 
-def gen_question_even():
+def gen_question_answer_even():
     question = str(random.randint(LOWER_LIMIT, UPPER_LIMIT))
-    correct_answer = number_even(question)
+    if define_number_even(question):
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
     return question, correct_answer
