@@ -3,7 +3,7 @@ import random
 LOWER_LIMIT = 1
 UPPER_LIMIT = 100
 
-rules_gcd = 'Find the greatest common divisor of given numbers.'
+rules = 'Find the greatest common divisor of given numbers.'
 
 
 def find_gcd(first_number, second_number):
@@ -15,7 +15,7 @@ def find_gcd(first_number, second_number):
     return first_number + second_number
 
 
-def gen_question_answer_gcd():
+def gen_question_answer():
     number1 = random.randint(LOWER_LIMIT, UPPER_LIMIT)
     number2 = random.randint(LOWER_LIMIT, UPPER_LIMIT)
     question = '{0} {1}'.format(number1, number2)
