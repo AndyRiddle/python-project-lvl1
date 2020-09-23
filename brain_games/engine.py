@@ -17,10 +17,7 @@ def start_game(rule, gen_question_answer):
         if correct_answer == answer:
             print('Correct!')
         else:
-            print("'{0}' is wrong answer ;(.                                     Correct answer was '{1}'.".format(
-                answer, correct_answer
-            )
-            )
+            print("'{0}' is wrong answer ;(. Correct answer was '{1}'.".format(answer, correct_answer))
             print("Let's try again, {0}!".format(name))
             return
     print('Congratulations, {0}!'.format(name))
