@@ -4,8 +4,7 @@ LOWER_LIMIT = 1
 UPPER_LIMIT_ELEMENT_PROGRESSION = 50
 UPPER_LIMIT_STEP = 5
 LIST_LENGTH = 10
-
-rules = 'What number is missing in the progression?'
+RULE = 'What number is missing in the progression?'
 
 
 def gen_progression():
@@ -20,8 +19,8 @@ def gen_progression():
 def gen_question_answer():
     progression = gen_progression()
     correct_answer = random.choice(progression)
-    key = progression.index(correct_answer)
-    progression[key] = '..'
+    index = progression.index(correct_answer)
+    progression[index] = '..'
     string_progression = ' '.join(progression)
     question = '{0}'.format(string_progression)
     return question, correct_answer

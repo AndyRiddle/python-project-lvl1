@@ -9,7 +9,7 @@ ARITHMETIC_OPERATIONS = (
     ('*', operator.mul),
 )
 
-rules = 'What is the result of the expression?'
+RULE = 'What is the result of the expression?'
 
 
 def gen_arithmetic_sign_answer(operand1, operand2):

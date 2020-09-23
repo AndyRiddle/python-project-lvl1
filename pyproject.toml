@@ -1,7 +1,7 @@
 
 [tool.poetry]
 name = "AndyRiddle_brain_games"
-version = "2.0.4"
+version = "2.0.5"
 description = "Package with short arithmetic games"
 authors = ["Andy <kas2850.cuk@yandex.ru>"]
 repository = "https://github.com/AndyRiddle/python-project-lvl1"
@@ -20,6 +20,7 @@ prompt = "^0.4.1"
 
 [tool.poetry.dev-dependencies]
 wemake-python-styleguide = "^0.14.1"
+autopep8 = "^1.5.4"
 
 [tool.poetry.scripts]
 brain_games = "brain_games.scripts.brain_games:main"

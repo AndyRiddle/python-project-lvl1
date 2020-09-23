@@ -3,7 +3,7 @@ import random
 LOWER_LIMIT = 1
 UPPER_LIMIT = 100
 
-rules = 'Find the greatest common divisor of given numbers.'
+RULE = 'Find the greatest common divisor of given numbers.'
 
 
 def find_gcd(first_number, second_number):

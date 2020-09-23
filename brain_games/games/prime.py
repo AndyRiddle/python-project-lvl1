@@ -5,7 +5,7 @@ FIRST_DIVISOR = 2
 LOWER_LIMIT = 1
 UPPER_LIMIT = 100
 
-rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):

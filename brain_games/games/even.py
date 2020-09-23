@@ -3,7 +3,7 @@ import random
 LOWER_LIMIT = 1
 UPPER_LIMIT = 100
 
-rules = 'Answer "yes" if number even otherwise answer "no".'
+RULE = 'Answer "yes" if number even otherwise answer "no".'
 
 
 def is_even(number):
