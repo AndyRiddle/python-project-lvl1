@@ -3,11 +3,13 @@ import random
 
 LOWER_LIMIT = 1
 UPPER_LIMIT = 100
-ARITHMETIC_OPERATIONS = (
+# Found mutable module constant
+# It is assumed that the list will not change in this case
+ARITHMETIC_OPERATIONS = [  # noqa: WPS407
     ('+', operator.add),
     ('-', operator.sub),
     ('*', operator.mul),
-)
+]
 
 RULE = 'What is the result of the expression?'
 

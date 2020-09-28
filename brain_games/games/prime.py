@@ -9,8 +9,10 @@ RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
+    if number <= 1:
+        return False
     for divisor in range(FIRST_DIVISOR, math.ceil(math.sqrt(number) + 1)):
-        if number % divisor == 0 and number != 2:
+        if (number % divisor == 0 and number != 2):
             return False
     return True
 
