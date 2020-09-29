@@ -1,7 +1,7 @@
 
 [tool.poetry]
 name = "AndyRiddle_brain_games"
-version = "2.0.7"
+version = "2.0.8"
 description = "Package with short arithmetic games"
 authors = ["Andy <kas2850.cuk@yandex.ru>"]
 repository = "https://github.com/AndyRiddle/python-project-lvl1"

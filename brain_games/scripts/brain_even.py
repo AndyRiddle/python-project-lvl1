@@ -3,7 +3,7 @@ from brain_games.games import even
 
 
 def main():
-    engine.start_game(even.RULE, even.gen_question_answer)
+    engine.start_game(even)
 
 
 if __name__ == '__main__':
